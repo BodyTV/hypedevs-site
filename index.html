@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name & Name – Development studio</title>
+<meta name="description" content="Two developers building Discord bots, websites and custom tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f6;--ink:#14213d;--muted:#4b5873;--line:#c9d1e0;--accent:#2f5bff;--accent-ink:#fff;--chip:#ffd23f;--panel:#14213d;--panel-ink:#e8edff}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1626;--ink:#e8edff;--muted:#a3b0cc;--line:#2a3652;--accent:#7b9bff;--accent-ink:#0f1626;--chip:#ffd23f;--panel:#1a2540;--panel-ink:#e8edff}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+.logo{font:800 1.25rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center;padding:4rem 0 5rem}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:34rem;color:var(--muted);margin:1.5rem 0 2rem;font-size:1.2rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.85rem 1.4rem;border-radius:.5rem;font-weight:600;text-decoration:none}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-left:.5rem}
+.chat{background:var(--panel);color:var(--panel-ink);border-radius:1rem;padding:1.25rem;font-size:.95rem;box-shadow:.6rem .6rem 0 var(--chip)}
+.msg{display:flex;gap:.75rem;margin:.9rem 0}
+.av{flex:none;width:2.25rem;height:2.25rem;border-radius:50%;background:#5865f2;display:grid;place-items:center;font-weight:700;font-size:.8rem}
+.av.bot{background:var(--chip);color:#14213d}
+.msg b{display:block;font-size:.9rem}
+.tag{background:#5865f2;border-radius:.25rem;padding:0 .35rem;font-size:.7rem;margin-left:.35rem;vertical-align:middle}
+.msg code{font:inherit;background:rgba(255,255,255,.1);padding:0 .3rem;border-radius:.2rem}
+section{padding:4rem 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:2rem;letter-spacing:-.02em}
+.services{display:grid;gap:0}
+.service{display:grid;grid-template-columns:14rem 1fr;gap:2rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.service:first-child{padding-top:0}
+.service h3{font-size:1.35rem}
+.service p{margin:0;color:var(--muted);max-width:40rem}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.project{border:2px solid var(--line);border-radius:.75rem;padding:1.5rem;text-decoration:none;display:block}
+.project:hover{border-color:var(--accent)}
+.project h3{font-size:1.3rem;margin-bottom:.5rem}
+.project p{margin:0 0 1rem;color:var(--muted)}
+.stack{font-size:.9rem;font-weight:600;color:var(--accent)}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.team h3{font-size:1.4rem}
+.team p{margin:.4rem 0 0;color:var(--muted)}
+.contact p{max-width:34rem;color:var(--muted);margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+footer a{margin-right:1.25rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding:2rem 0 3rem}.service{grid-template-columns:1fr;gap:.5rem}nav a{margin-left:1rem}.btn.alt{margin:.75rem 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#top">Name & Name</a>
+  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#team">Team</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>We build bots, websites and tools that just work.</h1>
+    <p>Two developers, one small studio. Tell us what you need, and we’ll build it, ship it and keep it running.</p>
+    <a class="btn" href="#contact">Start a project</a><a class="btn alt" href="#projects">See our work</a>
+  </div>
+  <div class="chat" aria-label="Example Discord conversation">
+    <div class="msg"><div class="av">You</div><div><b>You</b>Can someone set up reaction roles?</div></div>
+    <div class="msg"><div class="av bot">B</div><div><b>YourBot<span class="tag">BOT</span></b>Done. Use <code>/roles</code> to pick yours.</div></div>
+    <div class="msg"><div class="av">You</div><div><b>You</b>Perfect. How fast is the bot?</div></div>
+    <div class="msg"><div class="av bot">B</div><div><b>YourBot<span class="tag">BOT</span></b>Online, 42 ms.</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <h2>What we offer</h2>
+  <div class="services">
+    <div class="service"><h3>Discord bots</h3><p>Moderation, tickets, music, economy, custom commands. Built to your server’s needs and hosted if you want.</p></div>
+    <div class="service"><h3>Websites</h3><p>Fast, responsive sites and landing pages, from a simple portfolio to a full web app.</p></div>
+    <div class="service"><h3>Custom tools</h3><p>Scripts, automations and small apps that save you time. Replace this text with your own offer.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <a class="project" href="https://github.com/" target="_blank" rel="noopener"><h3>Project one</h3><p>One sentence on what it does and who it’s for.</p><span class="stack">Node.js, discord.js</span></a>
+    <a class="project" href="https://github.com/" target="_blank" rel="noopener"><h3>Project two</h3><p>One sentence on what it does and who it’s for.</p><span class="stack">Python, Flask</span></a>
+    <a class="project" href="https://github.com/" target="_blank" rel="noopener"><h3>Project three</h3><p>One sentence on what it does and who it’s for.</p><span class="stack">HTML, CSS, JavaScript</span></a>
+  </div>
+</section>
+
+<section id="team">
+  <h2>Who we are</h2>
+  <div class="team">
+    <div><h3>Name One</h3><p>Role, for example backend and bots. A short line about your experience.</p></div>
+    <div><h3>Name Two</h3><p>Role, for example frontend and design. A short line about your experience.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let’s talk</h2>
+  <p>Describe your idea in a few sentences. We usually reply within two days.</p>
+  <a class="btn" href="mailto:you@example.com">Email us</a>
+</section>
+</main>
+
+<footer>
+  <a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a>
+  <span>© 2026 Name & Name</span>
+</footer>
+</div>
+</body>
+</html>
