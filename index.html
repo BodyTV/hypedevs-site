@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Development studio – Body &amp; Zunye</title>
+<meta name="description" content="Two developers building Discord bots, Minecraft Plugins, Skripts and Mods.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={corePlugins:{preflight:false},theme:{extend:{fontFamily:{sans:['"Hanken Grotesk"','system-ui','sans-serif'],mono:['"JetBrains Mono"','ui-monospace','monospace']},colors:{brand:{DEFAULT:'#1f5eff',2:'#00a3ff',3:'#5ee0ff'}}}}}</script>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+<header>
+  <a class="brand" href="index.html" aria-label="Body &amp; Zunye home">
+    <strong>Body &amp; Zunye</strong>
+    <span class="pair"><img class="pfp" src="images/body.jpg" alt="Body"><img class="pfp" src="images/zunye.jpg" alt="Zunye"></span>
+  </a>
+  <nav><a href="index.html" class="on home" aria-current="page">Home</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="team.html">Team</a><a class="dsc" href="http://dsc.gg/hypedevs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.3.6a18 18 0 0 0-6.2 0L8.6 3a19.8 19.8 0 0 0-4.9 1.4C.6 9 0 13.5.3 17.9a20 20 0 0 0 6 3l1.3-2.1-2-1 .5-.4a14 14 0 0 0 12.2 0l.5.4-2 1 1.3 2.1a20 20 0 0 0 6-3c.4-5.100-.7-9.600-3.800-13.500ZM8.500 15.200c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400-.9 2.400-2.100 2.400Zm7 0c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400-.9 2.400-2.100 2.400Z"/></svg>Discord</a><a class="cta" href="contact.html">Contact</a></nav>
+</header>
+</div></div>
+
+<div class="wrap">
+<main>
+<div class="hero relative">
+  <div class="ambient"><span class="blob a"></span><span class="blob b"></span><span class="blob c"></span></div>
+  <div class="relative z-10">
+    <div class="pill"><span class="dot"></span>Open for new projects</div>
+    <h1 class="relative">We build bots, plugins, skripts and mods that <span class="grad">just work.</span></h1>
+    <p>Two developers, one idea. Tell us what you need, and we’ll build it, ship it and keep it running.</p>
+    <a class="btn" href="contact.html">Start a project</a><a class="btn alt" href="projects.html">See our work →</a>
+  </div>
+  <div id="heroBox" class="glowborder relative z-10 shadow-[0_30px_80px_-30px_rgba(31,94,255,.6)]">
+    <div class="flex items-center gap-2 border-b border-white/10 px-4 py-3">
+      <span class="h-3 w-3 rounded-full bg-red-400/80"></span><span class="h-3 w-3 rounded-full bg-yellow-400/80"></span><span class="h-3 w-3 rounded-full bg-green-400/80"></span>
+      <div role="tablist" aria-label="Code examples" class="ml-3 flex gap-1 overflow-x-auto text-sm">
+        <button type="button" role="tab" data-tab="skript" aria-selected="true" class="tab rounded-md px-3 py-1 font-medium">Skript</button>
+        <button type="button" role="tab" data-tab="python" aria-selected="false" class="tab rounded-md px-3 py-1 font-medium">Python</button>
+        <button type="button" role="tab" data-tab="java" aria-selected="false" class="tab rounded-md px-3 py-1 font-medium">Java</button>
+        <button type="button" role="tab" data-tab="chat" aria-selected="false" class="tab rounded-md px-3 py-1 font-medium">Discord</button>
+      </div>
+    </div>
+    <pre id="codePane" class="m-0 min-h-[17rem] overflow-x-auto px-5 py-4 font-mono text-[13px] leading-relaxed text-slate-200"><code id="codeOut" class="caret"></code></pre>
+    <div id="chatPane" class="min-h-[17rem] flex-col px-5 py-4 text-sm" style="display:none">
+      <div id="chatLog" class="flex flex-1 flex-col gap-3 overflow-y-auto pb-3" aria-live="polite"></div>
+      <div class="flex flex-wrap gap-2 border-t border-white/10 pt-3">
+        <button type="button" class="cmd rounded-md bg-white/5 px-3 py-1.5 font-mono text-xs hover:bg-brand/40" data-cmd="/ping">/ping</button>
+        <button type="button" class="cmd rounded-md bg-white/5 px-3 py-1.5 font-mono text-xs hover:bg-brand/40" data-cmd="/roles">/roles</button>
+        <button type="button" class="cmd rounded-md bg-white/5 px-3 py-1.5 font-mono text-xs hover:bg-brand/40" data-cmd="/ticket">/ticket</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats reveal">
+  <div class="stat"><b class="grad">2</b><span>Developers</span></div>
+  <div class="stat"><b class="grad">4</b><span>Things we build</span></div>
+  <div class="stat"><b class="grad">24/7</b><span>Bots kept online</span></div>
+  <div class="stat"><b class="grad">&lt;2 days</b><span>Reply time</span></div>
+</div>
+
+<div class="marq reveal" aria-hidden="true"><div class="track"><span>Discord bots</span><span>Minecraft plugins</span><span>Skripts</span><span>Mods</span><span>Websites</span><span>Automations</span><span>Custom tools</span><span>Discord bots</span><span>Minecraft plugins</span><span>Skripts</span><span>Mods</span><span>Websites</span><span>Automations</span><span>Custom tools</span></div></div>
+
+<section id="portfolio" class="reveal">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">Featured work</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Projects with <span class="gradtxt">real numbers.</span></h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-3" id="projectGrid"></div>
+</section>
+
+<section id="serviceCards" class="reveal">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">What we offer</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Pick a service, see the <span class="gradtxt">details.</span></h2>
+  <p class="mt-3 max-w-lg text-slate-400">Click “Details” on a card. Prices are starting prices.</p>
+  <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3" id="svcGrid"></div>
+</section>
+
+<section id="estimator" class="reveal">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">Estimator</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Get a price <span class="gradtxt">in seconds.</span></h2>
+  <p class="mt-3 max-w-lg text-slate-400">Pick what you need. This is a rough estimate, the final price depends on your exact idea.</p>
+  <div class="mt-10 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+    <div class="glass rounded-3xl p-6 sm:p-8">
+      <fieldset><legend class="mb-3 text-sm font-semibold text-slate-300">What do you need?</legend><div id="optList" class="grid gap-3 sm:grid-cols-2"></div></fieldset>
+      <fieldset class="mt-8"><legend class="mb-3 text-sm font-semibold text-slate-300">How complex is it?</legend><div id="cxList" class="grid grid-cols-3 gap-3"></div></fieldset>
+    </div>
+    <aside class="glowborder h-fit p-6 sm:p-8 lg:sticky lg:top-28">
+      <p class="text-sm text-slate-400">Estimated one-time cost</p>
+      <p id="total" class="mt-1 text-4xl font-extrabold tracking-tight" aria-live="polite">€0</p>
+      <p id="monthly" class="mt-1 text-sm text-slate-400"></p>
+      <ul id="summary" class="mt-5 space-y-1.5 border-t border-white/10 pt-4 text-sm text-slate-300"></ul>
+      <a href="http://dsc.gg/hypedevs" target="_blank" rel="noopener" class="mt-6 block rounded-xl bg-gradient-to-r from-brand to-brand-2 px-5 py-3 text-center font-semibold text-white shadow-lg shadow-brand/30 transition hover:-translate-y-0.5">Discuss this project</a>
+      <p class="mt-3 text-xs text-slate-500">Copy the summary into your first message so we can reply faster.</p>
+      <button id="copyBtn" type="button" class="mt-2 w-full rounded-xl border border-white/10 px-5 py-2 text-sm text-slate-300 hover:bg-white/5">Copy summary</button>
+    </aside>
+  </div>
+</section>
+
+<section id="social" class="reveal">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">Community</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Trusted by <span class="gradtxt">real people.</span></h2>
+  <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+    <div id="discordWidget" class="glass flex flex-wrap items-center gap-5 rounded-3xl p-6">
+  <div class="grid h-14 w-14 place-items-center rounded-2xl bg-[#1f5eff] text-2xl">💬</div>
+  <div class="min-w-0 flex-1">
+    <b class="dname block text-lg">Our Discord community</b>
+    <div class="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-400">
+      <span class="onl hidden"><span class="mr-1.5 inline-block h-2 w-2 rounded-full bg-emerald-400 align-middle"></span><b class="don text-slate-100">0</b> online</span>
+      <span class="mem hidden"><b class="dmem text-slate-100">0</b> members</span>
+      <span>Live status updates every minute</span>
+    </div>
+  </div>
+  <a class="join rounded-xl bg-[#1f5eff] px-5 py-2.5 font-semibold text-white transition hover:-translate-y-0.5" target="_blank" rel="noopener" href="http://dsc.gg/hypedevs">Join server</a>
+</div>
+    <div id="testi" class="glass flex flex-col rounded-3xl p-6 sm:p-8">
+      <div id="testiSlide" class="min-h-[12rem] flex-1" aria-live="polite"></div>
+      <div class="mt-6 flex items-center justify-between">
+        <div id="testiDots" class="flex items-center gap-2"></div>
+        <div class="flex gap-2"><button id="tPrev" type="button" aria-label="Previous" class="h-9 w-9 rounded-full border border-white/10 hover:bg-white/5">←</button><button id="tNext" type="button" aria-label="Next" class="h-9 w-9 rounded-full border border-white/10 hover:bg-white/5">→</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="reveal">
+  <div class="eyebrow">How it works</div>
+  <h2>From idea to <span class="grad">live</span> in three steps.</h2>
+  <div class="grid3 steps">
+    <div class="card step"><h3>Tell us</h3><p>Share your idea and what you need. No big forms, just a message.</p></div>
+    <div class="card step"><h3>We build</h3><p>We code it, show you progress and adjust until it feels right.</p></div>
+    <div class="card step"><h3>We ship</h3><p>Launch day, hosting if you want it, and support after.</p></div>
+  </div>
+</section>
+
+<section id="community" class="reveal">
+  <div class="dbox">
+    <div><div class="eyebrow">Community</div><h2>Join us on Discord</h2><p>Chat with us, ask questions, see updates and get help with your project.</p></div>
+    <a class="btn" href="http://dsc.gg/hypedevs" target="_blank" rel="noopener">Join the server</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="fbrand" index.html><span class="pair"><img class="pfp" src="images/body.jpg" alt=""><img class="pfp" src="images/zunye.jpg" alt=""></span>Body &amp; Zunye</a>
+  <a href="http://dsc.gg/hypedevs" target="_blank" rel="noopener">Discord</a><a href="datenschutz.html">Datenschutz</a>
+  <span class="c">© 2026 Body &amp; Zunye</span>
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

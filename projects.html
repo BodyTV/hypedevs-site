@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects – Body &amp; Zunye</title>
+<meta name="description" content="Projects built by Body & Zunye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={corePlugins:{preflight:false},theme:{extend:{fontFamily:{sans:['"Hanken Grotesk"','system-ui','sans-serif'],mono:['"JetBrains Mono"','ui-monospace','monospace']},colors:{brand:{DEFAULT:'#1f5eff',2:'#00a3ff',3:'#5ee0ff'}}}}}</script>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+<header>
+  <a class="brand" href="index.html" aria-label="Body &amp; Zunye home">
+    <strong>Body &amp; Zunye</strong>
+    <span class="pair"><img class="pfp" src="images/body.jpg" alt="Body"><img class="pfp" src="images/zunye.jpg" alt="Zunye"></span>
+  </a>
+  <nav><a href="index.html" class="home">Home</a><a href="services.html">Services</a><a href="projects.html" class="on" aria-current="page">Projects</a><a href="team.html">Team</a><a class="dsc" href="http://dsc.gg/hypedevs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.3.6a18 18 0 0 0-6.2 0L8.6 3a19.8 19.8 0 0 0-4.9 1.4C.6 9 0 13.5.3 17.9a20 20 0 0 0 6 3l1.3-2.1-2-1 .5-.4a14 14 0 0 0 12.2 0l.5.4-2 1 1.3 2.1a20 20 0 0 0 6-3c.4-5.100-.7-9.600-3.800-13.500ZM8.500 15.200c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400-.9 2.400-2.100 2.400Zm7 0c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400-.9 2.400-2.100 2.400Z"/></svg>Discord</a><a class="cta" href="contact.html">Contact</a></nav>
+</header>
+</div></div>
+
+<div class="wrap">
+<main>
+<div class="phead"><div class="eyebrow">Our work</div><h1>Projects we’re <span class="grad">proud of.</span></h1><p>A few things we have built.</p></div>
+<section id="portfolio" class="reveal" style="border-top:0">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">Featured work</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Projects with <span class="gradtxt">real numbers.</span></h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-3" id="projectGrid"></div>
+</section>
+
+<section id="social" class="reveal">
+  <p class="text-xs font-bold uppercase tracking-[.14em] text-brand-3">Community</p>
+  <h2 class="mt-2 max-w-xl text-4xl font-extrabold tracking-tight">Trusted by <span class="gradtxt">real people.</span></h2>
+  <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+    <div id="discordWidget" class="glass flex flex-wrap items-center gap-5 rounded-3xl p-6">
+  <div class="grid h-14 w-14 place-items-center rounded-2xl bg-[#1f5eff] text-2xl">💬</div>
+  <div class="min-w-0 flex-1">
+    <b class="dname block text-lg">Our Discord community</b>
+    <div class="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-400">
+      <span class="onl hidden"><span class="mr-1.5 inline-block h-2 w-2 rounded-full bg-emerald-400 align-middle"></span><b class="don text-slate-100">0</b> online</span>
+      <span class="mem hidden"><b class="dmem text-slate-100">0</b> members</span>
+      <span>Live status updates every minute</span>
+    </div>
+  </div>
+  <a class="join rounded-xl bg-[#1f5eff] px-5 py-2.5 font-semibold text-white transition hover:-translate-y-0.5" target="_blank" rel="noopener" href="http://dsc.gg/hypedevs">Join server</a>
+</div>
+    <div id="testi" class="glass flex flex-col rounded-3xl p-6 sm:p-8">
+      <div id="testiSlide" class="min-h-[12rem] flex-1" aria-live="polite"></div>
+      <div class="mt-6 flex items-center justify-between">
+        <div id="testiDots" class="flex items-center gap-2"></div>
+        <div class="flex gap-2"><button id="tPrev" type="button" aria-label="Previous" class="h-9 w-9 rounded-full border border-white/10 hover:bg-white/5">←</button><button id="tNext" type="button" aria-label="Next" class="h-9 w-9 rounded-full border border-white/10 hover:bg-white/5">→</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <a class="fbrand" index.html><span class="pair"><img class="pfp" src="images/body.jpg" alt=""><img class="pfp" src="images/zunye.jpg" alt=""></span>Body &amp; Zunye</a>
+  <a href="http://dsc.gg/hypedevs" target="_blank" rel="noopener">Discord</a><a href="datenschutz.html">Datenschutz</a>
+  <span class="c">© 2026 Body &amp; Zunye</span>
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
